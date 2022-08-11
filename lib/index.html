@@ -15,18 +15,31 @@
     <script src="https://github.com/makeusabrew/bootbox/releases/download/v5.5.2/bootbox.locales.min.js"></script>
 
 
-    <link rel="stylesheet" href="lib/style.css">
+    <link rel="stylesheet" href="style.css">
     <script type="module">
 
-        import {insertar_al_inicio} from './lib/index.js';
-        import {insertar_al_final} from './lib/index.js';
-        import {insertar_antes_x} from './lib/index.js';
-        import {elimina_inicio} from './lib/index.js';
+        import {insertar_al_inicio} from './index.js';
+        import {insertar_al_final} from './index.js';
+        import {insertar_antes_x} from './index.js';
+        import {insertar_despues_x} from './index.js';
+
+        import {elimina_inicio} from './index.js';
+        import {eliminar_ultimoNodo} from './index.js';
+        import {eliminar_nodoX} from './index.js';
+        import {eliminar_antesX} from './index.js';
+        import {eliminar_despuesX} from './index.js';
       
         window.insertar_al_inicio=insertar_al_inicio;
         window.insertar_al_final=insertar_al_final;
         window.insertar_antes_x=insertar_antes_x;
+        window.insertar_despues_x=insertar_despues_x;
+
+
         window.elimina_inicio=elimina_inicio;
+        window.eliminar_ultimoNodo=eliminar_ultimoNodo;
+        window.eliminar_nodoX=eliminar_nodoX;
+        window.eliminar_antesX=eliminar_antesX;
+        window.eliminar_despuesX=eliminar_despuesX;
 
     </script>
 
@@ -35,11 +48,20 @@
 <body>
     
 <canvas id="tutorial" width="700" height="150"></canvas>
+
 <div id="salida"></div>
+
     <button onclick="insertar_al_inicio()">insertar al inicio</button>
     <button onclick="insertar_al_final()">insertar al final</button>
     <button onclick="insertar_antes_x()">insertar ante de X</button>
+    <button onclick="insertar_despues_x()">insertar despues de X</button>
+
+
     <button onclick="elimina_inicio()">elimina inicio</button>
+    <button onclick="eliminar_ultimoNodo()">elimina ultimo nodo</button>
+    <button onclick="eliminar_nodoX()">eliminar el nodo x</button>
+    <button onclick="eliminar_antesX()">eliminar el nodo anterior a x</button>
+    <button onclick="eliminar_despuesX()">eliminar el nodo posterior a x</button>
 </body>
 
 </html>

@@ -1,1 +1,38 @@
-canvas { border: 1px solid black; }
+
+*{
+    padding:0px;
+    margin:0px;
+   
+}
+
+canvas { 
+    margin-top:150px;
+    border: 1px solid white; 
+}
+
+
+body{
+  background:url("../img/fondo04.jpg");
+   text-align:center;
+   
+}
+
+
+
+button{
+    margin:10px 10px 10px 0px;
+    color:#0aafff;
+    background-color:black;
+    padding:5px;
+    transition:all 300ms;
+}
+    
+
+
+button:hover{
+    font-size:15px;
+    color:#1400ff;
+    transform: scaler(1.2, 1.2);
+}
+
+
